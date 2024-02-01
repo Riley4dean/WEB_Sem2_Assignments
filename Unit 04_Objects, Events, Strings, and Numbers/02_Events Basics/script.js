@@ -11,5 +11,17 @@ function keyDownHandler() {
 }
 
 function keyUpHandler() {
-    document.getElementById("kitties").hidden = true;
+    document.getElementById("demo").hidden = "Hai";
+}
+
+function onClickHandler(){
+    document.getElementById("demo").innerHTML = "HAi";
+}
+
+function onChangeHandler(){
+    document.getElementById("demo").hidden = false;
+}
+
+function onLoadHandler(){
+    document.getElementById("demo").innerHTML = "Hello attack"
 }
