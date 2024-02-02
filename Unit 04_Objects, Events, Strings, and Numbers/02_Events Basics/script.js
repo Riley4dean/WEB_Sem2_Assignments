@@ -7,7 +7,10 @@ function mouseOutHandler() {
 }
 
 function keyDownHandler() {
-    document.getElementById("demo").innerHTML = "HI"
+    let x = 5
+    let y = x + 7
+    document.getElementById("demo").innerHTML = y
+    
 }
 
 function keyUpHandler() {
