@@ -7,4 +7,10 @@ function takeSquareRoot() {
     
 }
 
-// Make another function for takeAbsoluteValue
+function takeAbsoluteValue(){
+    let number = +document.getElementById("input2").value;
+    
+
+    let absoluteValue = Math.abs(number);
+    document.getElementById("result2").innerHTML = absoluteValue;
+}
