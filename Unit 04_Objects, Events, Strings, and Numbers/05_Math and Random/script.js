@@ -6,3 +6,5 @@ function takeSquareRoot() {
     document.getElementById("result").innerHTML = squareRoot;
     
 }
+
+// Make another function for takeAbsoluteValue
