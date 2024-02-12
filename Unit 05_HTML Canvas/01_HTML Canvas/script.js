@@ -45,3 +45,26 @@ function drawLine() {
     // Stroke it (Do the Drawing)
     ctx.stroke();
 }
+function drawLinGrad(){
+    var canvas = document.getElementById("myCanvas3");
+
+
+    var ctxr = canvas.getContext("2d");
+
+
+    let LengthX = +document.getElementById("LengthX").value;
+    let LengthY = +document.getElementById("LengthY").value;
+    let WidthX = +document.getElementById("WidthX").value;
+    let WidthY = +document.getElementById("WidthY").value;
+    let HeightX = +document.getElementById("HeightX").value;
+    let HeightY = +document.getElementById("HeightY").value;
+    var grd = ctxr.createRadialGradient(LengthX, LengthY, WidthX, WidthY, HeightX, HeightY);
+    grd.addColorStop(.5, "lightblue");
+       grd.addColorStop(1, "darkblue");
+
+    ctxr.clearRect(0, 0, canvas.width, canvas.height);
+    ctxr.beginPath();
+    ctxr.stroke();
+
+    ctxr.fillRect(LengthX, LengthY, WidthX, WidthY, HeightX, HeightY);
+}
