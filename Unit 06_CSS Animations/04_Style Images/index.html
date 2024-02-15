@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            opacity: 0.8;
+        }
+
+        img:hover {
+            transform: scaleY(-1);
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+
+        .responsive {
+            padding: 0 6px;
+            float: top;
+            width: 60.99999%;
+        }
+
+ 
+    </style>
+</head>
+
+<body>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img_forest.jpg">
+                <img class="invert" src="img_forest.jpg" alt="Forest" width="600" height="400">
+            </a>
+            <div class="desc">Cool inverted bridge that leads into a forest image</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
