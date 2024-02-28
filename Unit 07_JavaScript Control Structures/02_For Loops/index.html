@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="vehicles"></p>
+    <p id="class"></p>
+    <script>
+        const vehicle = ["truck", "car", "bicycle", "motorcycle", "van"];
+
+        let text = "";
+        for (let x of vehicle) {
+            text += x + "<br>";
+
+        }
+        document.getElementById("vehicles").innerHTML = text;
+
+        const dayClasses = { 1: "Japanese", 2: "Physics", 3: "Algebra 2", 4: "Software development" };
+        let classes = "";
+        for (let x in dayClasses) {
+            classes += dayClasses[x] + "<br>";
+
+        }
+        document.getElementById("class").innerHTML = classes;
+    </script>
+</body>
+
+</html>
