@@ -131,3 +131,4 @@ function generateNextMonth(){
     generateCalendar(year, month);
 }
 generateCalendar(year, month);
+//YOUDO:  implement generateNextMonth Function
